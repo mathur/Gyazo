@@ -76,7 +76,6 @@ Net::HTTP.start(HOST,80){|http|
     io.write url
     io.close
   }
-  system "open #{url}"
 
   # save id
   newid = res.response['X-Gyazo-Id']
